@@ -1,0 +1,362 @@
+/* 通用設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  background-color: #FFFBEA; /* 淡奶油黃 */
+  color: #333333;
+}
+
+body {
+  line-height: 1.6;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.2rem;
+}
+
+/* Header & Navbar */
+.site-header {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 2px solid #FFD54F; /* 黃色底線 */
+  background-color: #FFF9D7;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #FFB300; /* 深一點的黃橙 */
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #33691E; /* 深綠 */
+  font-size: 0.95rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.main-nav a:hover {
+  background-color: #81C784;
+  color: #ffffff;
+}
+
+/* 搜尋區 */
+.search-area {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.search-label {
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+#search-input {
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid #FFECB3;
+  font-size: 0.9rem;
+  min-width: 180px;
+}
+
+/* Hero 區塊 */
+.hero {
+  padding: 2rem 0 1.5rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #FFB300;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 1rem;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  background-color: #FFD54F;
+  color: #33691E;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.hero-button:hover {
+  background-color: #FFCA28;
+  transform: translateY(-1px);
+}
+
+/* 區塊通用樣式 */
+.section {
+  margin-bottom: 2rem;
+  padding: 1.2rem 1rem;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.section-header {
+  margin-bottom: 0.8rem;
+}
+
+.section-header h2 {
+  font-size: 1.2rem;
+  color: #33691E;
+}
+
+/* 今日金句卡片 */
+.today-quote .quote-card {
+  padding: 1rem;
+  border-radius: 12px;
+  background: linear-gradient(120deg, #FFF9D7, #E8F5E9);
+  border: 1px solid #FFECB3;
+}
+
+.quote-text {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.quote-meta {
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+/* 日記格狀 layout */
+.diary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.diary-card {
+  padding: 0.9rem;
+  border-radius: 12px;
+  border: 1px solid #FFECB3;
+  background-color: #FFFDF2;
+}
+
+.diary-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.diary-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444444;
+}
+
+.diary-date {
+  font-size: 0.8rem;
+  color: #999999;
+}
+
+.diary-highlight {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.diary-quote {
+  font-size: 0.9rem;
+  color: #33691E;
+  margin-bottom: 0.4rem;
+}
+
+.diary-tags {
+  font-size: 0.8rem;
+  color: #777777;
+}
+
+/* 收藏語錄列表 */
+.favorite-quotes .quotes-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.quotes-item {
+  padding: 0.7rem 0.8rem;
+  border-radius: 10px;
+  background-color: #E8F5E9; /* 淡綠背景 */
+  border: 1px solid #C8E6C9;
+  font-size: 0.9rem;
+}
+
+.quote-info {
+  display: block;
+  font-size: 0.8rem;
+  color: #666666;
+  margin-top: 0.3rem;
+}
+
+/* Photo Gallery */
+.photo-gallery .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+
+.gallery-item {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #F9FBE7;
+  border: 1px solid #FFECB3;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+}
+
+.gallery-item figcaption {
+  font-size: 0.8rem;
+  padding: 0.4rem 0.6rem;
+  color: #555555;
+}
+
+/* 每月回顧區 */
+.month-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.month-card {
+  padding: 0.9rem;
+  border-radius: 12px;
+  border: 1px solid #C8E6C9;
+  background-color: #E8F5E9;
+}
+
+.month-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.month-summary {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.month-highlights {
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777777;
+}
+
+.site-footer a {
+  color: #33691E;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* 響應式設計：平板與手機 */
+@media (max-width: 900px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .search-area {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 0.8rem;
+  }
+
+  .diary-grid {
+    grid-template-columns: 1fr; /* 日記卡片單欄 */
+  }
+
+  .photo-gallery .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); /* 相片兩欄 */
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-area {
+    margin-left: 0;
+  }
+
+  .hero {
+    padding: 1.5rem 0 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero-button {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .section {
+    padding: 1rem 0.8rem;
+  }
+
+  .photo-gallery .gallery-grid {
+    grid-template-columns: 1fr; /* 相片單欄 */
+  }
+}

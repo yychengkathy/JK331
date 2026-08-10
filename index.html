@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JK Love Diary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 網站 Header + Navbar -->
+  <header class="site-header">
+    <div class="logo">JK Love Diary</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#today-quote">Today</a></li>
+        <li><a href="#diary">Diary</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#monthly-review">Monthly Review</a></li>
+      </ul>
+    </nav>
+    <div class="search-area">
+      <label for="search-input" class="search-label">搜尋</label>
+      <input type="text" id="search-input" placeholder="輸入關鍵字搜尋日記或金句">
+    </div>
+  </header>
+
+  <!-- 主內容區 -->
+  <main>
+    <!-- Hero 區塊 -->
+    <section class="hero">
+      <h1>JK Love Diary</h1>
+      <p class="hero-subtitle">記錄每天的愛與小確幸</p>
+      <a href="#today-quote" class="hero-button">開始今天的記錄</a>
+    </section>
+
+    <!-- 今日金句專區 -->
+    <section id="today-quote" class="section today-quote">
+      <header class="section-header">
+        <h2>今日金句 Today’s Love Quote</h2>
+      </header>
+      <article class="quote-card" data-tags="溫暖 愛 希望">
+        <p class="quote-text">「真正的溫柔，是在你最累的時候，仍然有人耐心聽你說。」</p>
+        <p class="quote-meta">2026-08-10 · 心情：感恩</p>
+      </article>
+    </section>
+
+    <!-- 日記／Blog 卡片區 -->
+    <section id="diary" class="section diary-section">
+      <header class="section-header">
+        <h2>每日日記 Daily Moments</h2>
+      </header>
+
+      <div class="diary-grid">
+        <!-- 日記卡片示例 1 -->
+        <article class="diary-card" data-tags="行程 散步 愛情語錄">
+          <header class="diary-card-header">
+            <h3 class="diary-title">黃昏散步 · 今日小確幸</h3>
+            <p class="diary-date">2026-08-09</p>
+          </header>
+          <p class="diary-highlight">
+            今天在海邊散步，風很溫柔，像有人在輕輕跟你說：「慢慢走，沒關係。」
+          </p>
+          <p class="diary-quote">
+            「重要的不是走到哪裡，而是跟誰一起走。」
+          </p>
+          <p class="diary-tags">#sunset #walk #lovequote</p>
+        </article>
+
+        <!-- 日記卡片示例 2 -->
+        <article class="diary-card" data-tags="工作 成就 感恩">
+          <header class="diary-card-header">
+            <h3 class="diary-title">完成一個小目標</h3>
+            <p class="diary-date">2026-08-08</p>
+          </header>
+          <p class="diary-highlight">
+            花了一整天整理計劃，終於把一直拖延的 TODO 清掉，心裡輕鬆了很多。
+          </p>
+          <p class="diary-quote">
+            「你值得為自己感到驕傲，哪怕只是向前一步。」
+          </p>
+          <p class="diary-tags">#work #progress #gratitude</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 收藏語錄列表 -->
+    <section id="favorite-quotes" class="section favorite-quotes">
+      <header class="section-header">
+        <h2>收藏語錄 Favorite Quotes</h2>
+      </header>
+
+      <ul class="quotes-list">
+        <li class="quotes-item" data-tags="治癒 希望">
+          「當你覺得世界太吵的時候，試試聽聽自己心裡的聲音。」
+          <span class="quote-info">收藏日期：2026-07-30</span>
+        </li>
+        <li class="quotes-item" data-tags="陪伴 溫暖">
+          「真正的陪伴，不一定要說很多話，只要在你需要的時候在場。」
+          <span class="quote-info">收藏日期：2026-07-25</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Photo Gallery 區 -->
+    <section id="gallery" class="section photo-gallery">
+      <header class="section-header">
+        <h2>相片集 Photo Gallery</h2>
+      </header>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item" data-tags="sunset 海邊">
+          <img src="assets/images/sunset-placeholder.jpg" alt="海邊黃昏">
+          <figcaption>海邊的黃昏 · 2026-08-09</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-tags="coffee 下午茶">
+          <img src="assets/images/coffee-placeholder.jpg" alt="咖啡與筆記本">
+          <figcaption>安靜的咖啡時間 · 2026-08-08</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 每月回顧區 -->
+    <section id="monthly-review" class="section monthly-review">
+      <header class="section-header">
+        <h2>每月回顧 Monthly Review</h2>
+      </header>
+
+      <div class="month-grid">
+        <article class="month-card" data-tags="2026-08 回顧">
+          <h3 class="month-title">2026-08 · 關鍵字：溫柔、整理、出走</h3>
+          <p class="month-summary">
+            這個月多了幾次黃昏散步，也開始整理心裡和桌面上的事情，慢慢找到自己的節奏。
+          </p>
+          <ul class="month-highlights">
+            <li>本月精選金句：真正的溫柔，是在你最累的時候，仍然有人耐心聽你說。</li>
+            <li>本月精選照片：海邊黃昏、咖啡記錄本。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer 區 -->
+  <footer class="site-footer">
+    <p>© 2026 JK Love Diary · Crafted with love</p>
+    <p>
+      <a href="https://github.com/你的帳號" target="_blank">GitHub</a> ·
+      <a href="#" target="_blank">Instagram</a> ·
+      <a href="#" target="_blank">WhatsApp</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
