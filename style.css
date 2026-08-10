@@ -7,8 +7,8 @@
 
 html, body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
-  background-color: #F6F6F7; /* 柔和灰白背景 */
-  color: #444444;            /* 深灰文字 */
+  background-color: #FFFBEA; /* 淡奶油黃 */
+  color: #333333;
 }
 
 body {
@@ -29,14 +29,14 @@ main {
   display: flex;
   align-items: center;
   gap: 1rem;
-  border-bottom: 2px solid #FBCB8B; /* Soft peach yellow */
-  background-color: #F7D7D4;        /* Soft coral pink */
+  border-bottom: 2px solid #FFD54F; /* 黃色底線 */
+  background-color: #FFF9D7;
 }
 
 .logo {
   font-weight: 700;
   font-size: 1.2rem;
-  color: #B2A7BB; /* Mauve */
+  color: #FFB300; /* 深一點的黃橙 */
 }
 
 .main-nav ul {
@@ -47,7 +47,7 @@ main {
 
 .main-nav a {
   text-decoration: none;
-  color: #444444;
+  color: #33691E; /* 深綠 */
   font-size: 0.95rem;
   padding: 0.3rem 0.6rem;
   border-radius: 999px;
@@ -55,8 +55,8 @@ main {
 }
 
 .main-nav a:hover {
-  background-color: #FBCB8B;
-  color: #444444;
+  background-color: #81C784;
+  color: #ffffff;
 }
 
 /* 搜尋區 */
@@ -69,16 +69,15 @@ main {
 
 .search-label {
   font-size: 0.85rem;
-  color: #777777;
+  color: #666666;
 }
 
 #search-input {
   padding: 0.3rem 0.6rem;
   border-radius: 999px;
-  border: 1px solid #FBCB8B;
+  border: 1px solid #FFECB3;
   font-size: 0.9rem;
   min-width: 180px;
-  background-color: #FFFFFF;
 }
 
 /* Hero 區塊 */
@@ -90,20 +89,20 @@ main {
 .hero h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  color: #B2A7BB;
+  color: #FFB300;
 }
 
 .hero-subtitle {
   font-size: 1rem;
-  color: #666666;
+  color: #555555;
   margin-bottom: 1rem;
 }
 
 .hero-button {
   display: inline-block;
   padding: 0.6rem 1.4rem;
-  background-color: #FBCB8B;
-  color: #444444;
+  background-color: #FFD54F;
+  color: #33691E;
   text-decoration: none;
   border-radius: 999px;
   font-size: 0.95rem;
@@ -113,7 +112,7 @@ main {
 }
 
 .hero-button:hover {
-  background-color: #F7D7D4;
+  background-color: #FFCA28;
   transform: translateY(-1px);
 }
 
@@ -124,7 +123,6 @@ main {
   background-color: #FFFFFF;
   border-radius: 16px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
-  border: 1px solid #E0E0E0;
 }
 
 .section-header {
@@ -133,15 +131,15 @@ main {
 
 .section-header h2 {
   font-size: 1.2rem;
-  color: #B2A7BB;
+  color: #33691E;
 }
 
 /* 今日金句卡片 */
 .today-quote .quote-card {
   padding: 1rem;
   border-radius: 12px;
-  background: linear-gradient(120deg, #F7D7D4, #B0C2D7);
-  border: 1px solid #FBCB8B;
+  background: linear-gradient(120deg, #FFF9D7, #E8F5E9);
+  border: 1px solid #FFECB3;
 }
 
 .quote-text {
@@ -164,8 +162,8 @@ main {
 .diary-card {
   padding: 0.9rem;
   border-radius: 12px;
-  border: 1px solid #FBCB8B;
-  background-color: #F7D7D4;
+  border: 1px solid #FFECB3;
+  background-color: #FFFDF2;
 }
 
 .diary-card-header {
@@ -183,7 +181,7 @@ main {
 
 .diary-date {
   font-size: 0.8rem;
-  color: #777777;
+  color: #999999;
 }
 
 .diary-highlight {
@@ -193,13 +191,13 @@ main {
 
 .diary-quote {
   font-size: 0.9rem;
-  color: #B2A7BB;
+  color: #33691E;
   margin-bottom: 0.4rem;
 }
 
 .diary-tags {
   font-size: 0.8rem;
-  color: #666666;
+  color: #777777;
 }
 
 /* 收藏語錄列表 */
@@ -213,16 +211,15 @@ main {
 .quotes-item {
   padding: 0.7rem 0.8rem;
   border-radius: 10px;
-  background-color: #B0C2D7; /* Pastel blue-grey */
-  border: 1px solid #F6F6F7;
+  background-color: #E8F5E9; /* 淡綠背景 */
+  border: 1px solid #C8E6C9;
   font-size: 0.9rem;
-  color: #222222;
 }
 
 .quote-info {
   display: block;
   font-size: 0.8rem;
-  color: #444444;
+  color: #666666;
   margin-top: 0.3rem;
 }
 
@@ -236,8 +233,8 @@ main {
 .gallery-item {
   border-radius: 10px;
   overflow: hidden;
-  background-color: #F6F6F7;
-  border: 1px solid #E0E0E0;
+  background-color: #F9FBE7;
+  border: 1px solid #FFECB3;
 }
 
 .gallery-item img {
@@ -261,15 +258,14 @@ main {
 .month-card {
   padding: 0.9rem;
   border-radius: 12px;
-  border: 1px solid #B0C2D7;
-  background-color: #FFFFFF;
+  border: 1px solid #C8E6C9;
+  background-color: #E8F5E9;
 }
 
 .month-title {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #B2A7BB;
 }
 
 .month-summary {
@@ -292,7 +288,7 @@ main {
 }
 
 .site-footer a {
-  color: #B2A7BB;
+  color: #33691E;
   text-decoration: none;
 }
 
@@ -321,11 +317,11 @@ main {
   }
 
   .diary-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 日記卡片單欄 */
   }
 
   .photo-gallery .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 相片兩欄 */
   }
 }
 
@@ -361,6 +357,6 @@ main {
   }
 
   .photo-gallery .gallery-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 相片單欄 */
   }
 }
